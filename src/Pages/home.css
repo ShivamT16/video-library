@@ -1,0 +1,10 @@
+.home{
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+}
+
+.category-name{
+    color: black;
+    text-decoration: none;
+}

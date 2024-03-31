@@ -1,0 +1,18 @@
+.video-description{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.action-btn{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 8rem;
+    cursor: pointer;
+}
+
+.title{
+    width: 18rem;
+}

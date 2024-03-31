@@ -1,0 +1,42 @@
+.videoList{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.videoCard{
+    width: min-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.videoCard-detail{
+    display: flex;
+}
+.creator-image{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    margin: 1.2rem 0.2rem;
+}
+.watchLater-btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .3rem;
+    height: 2.5rem;
+    margin: -18px -3px;
+    position: absolute;
+    top: 0;
+    left: 1;
+    right: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.searchBar{
+    height: 1.5rem;
+    width: 25rem;
+    border-radius: 2rem;
+    margin: -1rem 0rem 1rem 15rem ;
+    padding: 0rem 0.5rem; 
+}
