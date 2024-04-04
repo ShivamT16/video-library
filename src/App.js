@@ -9,13 +9,16 @@ import {categories, videos} from "./Pages/Database"
 import { NavLink, Route, Routes } from "react-router-dom";
 
 function App() {
+  const getActiveStyle = ({ isActive }) => ({
+    fontWeight: isActive ? "600" : "200",
+  });
   return (
     <div className="App">
       <nav className='navigation'>
-        <NavLink className="nav-heading" to="/">Home</NavLink>
-        <NavLink className="nav-heading" to="/explore" >Explore</NavLink>
-        <NavLink className="nav-heading" to="playlist" >Playlists</NavLink>
-        <NavLink className="nav-heading" to="/watchlater"> Watch Later</NavLink>
+        <NavLink style={getActiveStyle} className="nav-heading" to="/">Home</NavLink>
+        <NavLink style={getActiveStyle} className="nav-heading" to="/explore" >Explore</NavLink>
+        <NavLink style={getActiveStyle} className="nav-heading" to="playlist" >Playlists</NavLink>
+        <NavLink style={getActiveStyle} className="nav-heading" to="/watchlater"> Watch Later</NavLink>
       </nav>
     <Routes>
       <Route path="/" element={<Home categories = {categories}/>} />
