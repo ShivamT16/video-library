@@ -1,0 +1,40 @@
+.add-playlist{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 5px 10px 10px grey;
+    width: max-content;
+}
+.playlist-input{
+    font-size: large;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+}
+.add-btn{
+    font-size: 1rem;
+    padding: .2rem 2.7rem;
+    cursor: pointer;
+}
+.playlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0rem;
+}
+.playlists{
+    position: relative;
+}
+.playlist-icon{
+    border: 1px solid black;
+    border-radius: 2rem;
+    height: 10rem;
+    width: 12rem;
+}
+.playlist-para{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    margin-top: -10rem;
+    padding: .5rem;
+}

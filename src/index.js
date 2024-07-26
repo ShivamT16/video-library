@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
     <Router>
     <WatchLaterProvider>
-      <VideoProvider>
+    <VideoProvider>
     <CategoryProvider>
       <App />
     </CategoryProvider>
