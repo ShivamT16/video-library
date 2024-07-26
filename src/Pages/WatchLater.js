@@ -9,16 +9,19 @@ export const WatchLater = () => {
     return (
         <div>
             <h1>Watch Later</h1>
+
             <div className="videoList">
             {
       watchLaterList.map((item) => {
     const {_id,title,views,thumbnail,category,creator} = item;
+
 return (
 <div key={_id} className="videoCard" onClick={() => handleVideo(_id)}>
 <div className="watchLater-btn">
     <p  onClick={() => handleDelete(_id)} ><AccessTimeFilledRoundedIcon color="primary"></AccessTimeFilledRoundedIcon></p>
     </div>
-<Link to="/videopage">
+
+<Link className="category-name" to="/videopage">
     <img alt="thumbnail" src={thumbnail} ></img>
     <div className="videoCard-detail" >
     <img className="creator-image" alt="creator" src={thumbnail} ></img>
@@ -29,8 +32,9 @@ return (
     </div>
     </div>
     </Link>
+
 </div>
-)})} </div>
-        </div>
-    )
-}
+)})} 
+</div>
+  </div>
+)}

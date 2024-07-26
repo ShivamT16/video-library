@@ -1,5 +1,5 @@
 import './App.css';
-import {Home} from "./Pages/Home"
+import { Home } from "./Pages/Home"
 import { Explore } from "./Pages/Explore";
 import { Playlist } from './Pages/Playlist';
 import { VideoPage } from './Pages/VideoPage';

@@ -14,9 +14,9 @@ export const Home = ({categories}) => {
             {
                 categories.map(({_id,thumbnail,category}) => 
                 <div style={{cursor:"pointer"}} key={_id} onClick={() => handleCategory(category)} >
-                    <Link to="/videoListing" >
+                    <Link className="category-name" to="/videoListing" >
                       <img alt="thumbnail" src={thumbnail} ></img>
-                    <h3 className="category-name">{category}</h3>
+                    <h3 >{category}</h3>
                     </Link>
                 </div>
                 )
